@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Numbers</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="add.js"></script>
+  </head>
+  <body>
+    <h1 class="text-3xl font-bold text-center mt-10">Add Numbers</h1>
+    <div class="container mx-auto max-w-xs mt-10">
+      <form id="addForm" class="space-y-4">
+        <div>
+          <label for="number1" class="block text-gray-700">Number 1:</label>
+          <input
+            type="number"
+            id="number1"
+            name="number1"
+            required
+            class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+          />
+        </div>
+
+        <div>
+          <label for="number2" class="block text-gray-700">Number 2:</label>
+          <input
+            type="number"
+            id="number2"
+            name="number2"
+            required
+            class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+          />
+        </div>
+
+        <button
+          type="submit"
+          class="w-full bg-blue-500 text-white rounded-md py-2 px-4 hover:bg-blue-600"
+        >
+          Add
+        </button>
+      </form>
+
+      <div id="result" class="mt-4"></div>
+    </div>
+  </body>
+</html>
